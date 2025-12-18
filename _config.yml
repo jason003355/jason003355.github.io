@@ -1,2 +1,6 @@
 title: Jason's Blog
+description: ""
 theme: minima
+
+minima:
+  skin: solarized-dark
