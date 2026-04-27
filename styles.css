@@ -112,6 +112,39 @@ p {
   max-width: 72ch;
 }
 
+.page-title {
+  margin-bottom: 1.25rem;
+}
+
+.writing-section {
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+}
+
+.writing-section + .writing-section {
+  margin-top: 1.5rem;
+}
+
+.writing-list {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--text);
+}
+
+.writing-list li {
+  margin: 0.35rem 0;
+}
+
+.writing-list a {
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.empty-note {
+  margin-bottom: 0;
+}
+
 .code-note {
   margin-top: 1rem;
   padding: 1rem;
