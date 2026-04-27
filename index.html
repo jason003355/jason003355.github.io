@@ -8,11 +8,56 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <main class="home-wrap">
-    <section class="home-card simple-home-card">
-      <h1>Jason Yin</h1>
-      <a class="main-link" href="articles/index.html">Writing</a>
-    </section>
-  </main>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Jason Yin home">
+        <span class="brand-mark">JY</span>
+        <span>Jason Yin</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="articles/index.html">Writing</a>
+        <a href="articles/comments/index.html">Comments</a>
+        <a href="articles/daily-notes/index.html">Daily Notes</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="home-hero">
+        <div class="hero-copy">
+          <p class="kicker">Personal Website</p>
+          <h1>Jason Yin</h1>
+          <p class="hero-lede">A home for writing, comments, and notes on technology, capital, and the systems around them.</p>
+          <div class="hero-actions">
+            <a class="button-link primary" href="articles/index.html">Read Writing</a>
+            <a class="button-link secondary" href="articles/comments/manus-acquisition-halt.html">Latest Comment</a>
+          </div>
+        </div>
+
+        <aside class="focus-panel" aria-label="Latest writing">
+          <p class="panel-label">Latest</p>
+          <a class="featured-link" href="articles/comments/manus-acquisition-halt.html">浅谈 Manus 被收购强制叫停事件</a>
+          <p>Comments</p>
+          <div class="panel-lines" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </aside>
+      </section>
+
+      <section class="home-grid" aria-label="Writing sections">
+        <a class="section-tile" href="articles/comments/index.html">
+          <span>01</span>
+          <h2>Comments</h2>
+          <p>Longer-form arguments and observations.</p>
+        </a>
+        <a class="section-tile" href="articles/daily-notes/index.html">
+          <span>02</span>
+          <h2>Daily Notes</h2>
+          <p>Short notes and ongoing fragments.</p>
+        </a>
+      </section>
+    </main>
+  </div>
 </body>
 </html>
