@@ -8,24 +8,49 @@
   <link rel="stylesheet" href="../styles.css" />
 </head>
 <body>
-  <main class="page-wrap">
-    <nav class="simple-nav"><a href="../index.html">← Home</a></nav>
-    <article class="prose">
-      <p class="eyebrow">Writing</p>
-      <h1 class="page-title">Writing</h1>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="../index.html" aria-label="Jason Yin home">
+        <span class="brand-mark">JY</span>
+        <span>Jason Yin</span>
+      </a>
+      <nav class="nav-links" aria-label="Writing navigation">
+        <a href="index.html" aria-current="page">Writing</a>
+        <a href="comments/index.html">Comments</a>
+        <a href="daily-notes/index.html">Daily Notes</a>
+      </nav>
+    </header>
 
-      <section class="writing-section">
-        <h2><a href="comments/index.html">Comments</a></h2>
-        <ul class="writing-list">
-          <li><a href="comments/manus-acquisition-halt.html">浅谈 Manus 被收购强制叫停事件</a></li>
-        </ul>
+    <main class="page-main">
+      <section class="page-heading">
+        <p class="kicker">Writing</p>
+        <h1>Writing</h1>
+        <p>Comments and daily notes, organized by type.</p>
       </section>
 
-      <section class="writing-section">
-        <h2><a href="daily-notes/index.html">Daily Notes</a></h2>
-        <p class="empty-note">暂无内容</p>
+      <section class="writing-grid">
+        <article class="writing-column">
+          <a class="column-heading" href="comments/index.html">
+            <span>01</span>
+            <h2>Comments</h2>
+          </a>
+          <ul class="article-list">
+            <li>
+              <a href="comments/manus-acquisition-halt.html">浅谈 Manus 被收购强制叫停事件</a>
+              <span>Comments</span>
+            </li>
+          </ul>
+        </article>
+
+        <article class="writing-column">
+          <a class="column-heading" href="daily-notes/index.html">
+            <span>02</span>
+            <h2>Daily Notes</h2>
+          </a>
+          <p class="empty-note">暂无内容</p>
+        </article>
       </section>
-    </article>
-  </main>
+    </main>
+  </div>
 </body>
 </html>
