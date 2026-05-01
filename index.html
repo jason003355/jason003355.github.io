@@ -11,51 +11,26 @@
   <div class="site-shell">
     <header class="site-header">
       <a class="brand" href="index.html" aria-label="Jason随笔首页">
-        <span class="brand-mark">J</span>
         <span>Jason随笔</span>
       </a>
       <nav class="nav-links" aria-label="Primary navigation">
-        <a href="articles/index.html">文章</a>
+        <a href="articles/index.html" aria-current="page">文章</a>
         <a href="articles/comments/index.html">评论</a>
         <a href="articles/daily-notes/index.html">日记</a>
       </nav>
     </header>
 
-    <main>
-      <section class="home-hero">
-        <div class="hero-copy">
-          <p class="kicker">随笔记录</p>
-          <h1>Jason随笔</h1>
-          <p class="hero-lede">一些评论、随想和日常记录。</p>
-          <div class="hero-actions">
-            <a class="button-link primary" href="articles/index.html">查看文章</a>
-            <a class="button-link secondary" href="articles/comments/manus-acquisition-halt.html">最新一篇</a>
-          </div>
-        </div>
-
-        <aside class="focus-panel" aria-label="Latest writing">
-          <p class="panel-label">最新</p>
-          <a class="featured-link" href="articles/comments/manus-acquisition-halt.html">浅谈 Manus 被收购强制叫停事件</a>
-          <p>评论</p>
-          <div class="panel-lines" aria-hidden="true">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </aside>
-      </section>
-
-      <section class="home-grid" aria-label="Writing sections">
-        <a class="section-tile" href="articles/comments/index.html">
-          <span>01</span>
-          <h2>评论</h2>
-          <p>围绕技术、资本和环境变化的长一点的判断。</p>
-        </a>
-        <a class="section-tile" href="articles/daily-notes/index.html">
-          <span>02</span>
-          <h2>日记</h2>
-          <p>短记录，碎片想法，未展开的观察。</p>
-        </a>
+    <main class="blog-main">
+      <section class="post-list" aria-label="最新文章">
+        <article class="post-preview">
+          <time datetime="2026-04-27">4/27/26</time>
+          <h1>
+            <a href="articles/comments/manus-acquisition-halt.html">
+              <span class="title-run">浅谈 Manus</span><span class="title-run">被收购强制叫停事件</span>
+            </a>
+          </h1>
+          <a class="read-more" href="articles/comments/manus-acquisition-halt.html">Read More</a>
+        </article>
       </section>
     </main>
   </div>
