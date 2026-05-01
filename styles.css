@@ -44,12 +44,12 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 43px;
+  gap: 36px;
 }
 
 .brand {
   color: var(--blue);
-  font-size: 1.65rem;
+  font-size: 1.45rem;
   font-weight: 700;
   line-height: 1;
 }
@@ -63,12 +63,12 @@ ul {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 36px;
+  gap: 32px;
 }
 
 .nav-links a {
   color: var(--ink);
-  font-size: 1.42rem;
+  font-size: 1.24rem;
   font-weight: 400;
   line-height: 1.1;
   text-underline-offset: 0.28em;
@@ -83,12 +83,12 @@ ul {
 .blog-main,
 .page-main,
 .article-main {
-  width: min(920px, 48vw);
-  margin-left: 46vw;
+  width: min(1040px, 54vw);
+  margin-left: 44vw;
 }
 
 .blog-main {
-  padding-top: 136px;
+  padding-top: 118px;
 }
 
 .post-list {
@@ -99,19 +99,19 @@ ul {
 
 .post-preview {
   display: grid;
-  gap: 28px;
+  gap: 24px;
   min-width: 0;
 }
 
 .post-preview time {
   color: var(--ink);
-  font-size: 1.5rem;
+  font-size: 1.28rem;
   line-height: 1;
 }
 
 .post-preview h1 {
   color: var(--blue);
-  font-size: 4.45rem;
+  font-size: 3.05rem;
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0;
@@ -133,9 +133,9 @@ ul {
 
 .read-more {
   width: max-content;
-  margin-top: 18px;
+  margin-top: 8px;
   color: var(--blue);
-  font-size: 1.45rem;
+  font-size: 1.24rem;
   line-height: 1.1;
   text-decoration-line: underline;
   text-decoration-thickness: 1.5px;
@@ -143,11 +143,11 @@ ul {
 }
 
 .page-main {
-  padding-top: 128px;
+  padding-top: 108px;
 }
 
 .page-heading {
-  margin-bottom: 54px;
+  margin-bottom: 44px;
 }
 
 .kicker,
@@ -155,9 +155,9 @@ ul {
 .column-heading span,
 .section-tile span {
   display: block;
-  margin-bottom: 22px;
+  margin-bottom: 18px;
   color: var(--ink);
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 400;
 }
 
@@ -165,7 +165,7 @@ ul {
 .column-heading h2,
 .section-tile h2 {
   color: var(--blue);
-  font-size: 4.15rem;
+  font-size: 3rem;
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0;
@@ -198,21 +198,21 @@ ul {
 
 .article-list {
   display: grid;
-  gap: 44px;
+  gap: 36px;
   padding: 0;
   list-style: none;
 }
 
 .article-list li {
   display: grid;
-  gap: 20px;
+  gap: 16px;
   padding: 0;
   border: 0;
 }
 
 .article-list a {
   color: var(--blue);
-  font-size: 3.75rem;
+  font-size: 2.55rem;
   font-weight: 700;
   line-height: 1.16;
   overflow-wrap: anywhere;
@@ -220,7 +220,7 @@ ul {
 }
 
 .article-main {
-  padding-top: 118px;
+  padding-top: 98px;
 }
 
 .prose {
@@ -232,9 +232,9 @@ ul {
 }
 
 .prose h1 {
-  margin-bottom: 56px;
+  margin-bottom: 44px;
   color: var(--blue);
-  font-size: 4rem;
+  font-size: 2.8rem;
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0;
@@ -271,11 +271,11 @@ ul {
 
 @media (max-width: 1099px) {
   .site-shell {
-    padding: 42px 20px 72px;
+    padding: 38px 20px 68px;
   }
 
   .site-header {
-    gap: 34px;
+    gap: 30px;
   }
 
   .blog-main,
@@ -288,60 +288,79 @@ ul {
 
   .blog-main,
   .page-main {
-    padding-top: 96px;
+    padding-top: 82px;
   }
 
   .article-main {
-    padding-top: 82px;
+    padding-top: 72px;
   }
 
   .post-preview h1,
   .page-heading h1,
   .column-heading h2,
   .section-tile h2 {
-    font-size: 3.65rem;
+    font-size: 2.45rem;
   }
 
   .article-list a {
-    font-size: 3.1rem;
+    font-size: 2.15rem;
   }
 
   .prose h1 {
-    font-size: 3.35rem;
+    font-size: 2.35rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .post-preview h1 a,
+  .article-list a,
+  .prose h1 {
+    white-space: nowrap;
+  }
+}
+
+@media (min-width: 1100px) and (max-width: 1599px) {
+  .post-preview h1 {
+    font-size: 2.35rem;
+  }
+
+  .article-list a,
+  .prose h1 {
+    font-size: 2.15rem;
   }
 }
 
 @media (max-width: 620px) {
   .site-shell {
-    padding: 34px 18px 58px;
+    padding: 32px 18px 56px;
   }
 
   .brand {
-    font-size: 1.45rem;
+    font-size: 1.28rem;
   }
 
   .nav-links {
-    gap: 24px;
+    gap: 22px;
   }
 
   .nav-links a {
-    font-size: 1.12rem;
+    font-size: 1.02rem;
   }
 
   .blog-main,
   .page-main {
-    padding-top: 70px;
+    padding-top: 62px;
   }
 
   .post-preview time {
-    font-size: 1.15rem;
+    font-size: 1rem;
   }
 
   .post-preview h1,
   .page-heading h1,
   .column-heading h2,
   .section-tile h2 {
-    font-size: 1.9rem;
+    font-size: 1.72rem;
   }
 
   .post-preview h1 a,
@@ -359,14 +378,14 @@ ul {
   }
 
   .read-more {
-    font-size: 1.18rem;
+    font-size: 1.05rem;
   }
 
   .prose h1 {
-    font-size: 1.9rem;
+    font-size: 1.72rem;
   }
 
   .article-list a {
-    font-size: 1.85rem;
+    font-size: 1.68rem;
   }
 }
