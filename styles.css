@@ -5,6 +5,12 @@
   --muted: #4b4f56;
 }
 
+body.diary-theme {
+  --bg: #e7ece9;
+  --blue: #2c7a68;
+  --muted: #52605b;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -103,7 +109,8 @@ ul {
   min-width: 0;
 }
 
-.post-preview time {
+.post-preview time,
+.post-meta {
   color: var(--ink);
   font-size: 1.28rem;
   line-height: 1;
@@ -125,6 +132,15 @@ ul {
   overflow-wrap: anywhere;
   white-space: normal;
   word-break: break-word;
+}
+
+.empty-preview h1 {
+  color: var(--blue);
+}
+
+.empty-preview .empty-note {
+  max-width: 32rem;
+  font-size: 1.1rem;
 }
 
 .title-run + .title-run::before {
@@ -352,7 +368,8 @@ ul {
     padding-top: 62px;
   }
 
-  .post-preview time {
+  .post-preview time,
+  .post-meta {
     font-size: 1rem;
   }
 
